@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'Package:flutter/material.dart';
+import './auth.dart';
 
 void main(){
   runApp(const ChatApp());
@@ -12,20 +13,11 @@ class ChatApp extends StatelessWidget {
   @override
   Widget build (BuildContext context){
     return MaterialApp(
-      home: LogChat()
-    );
-  }
-}
-
-class LogChat extends StatelessWidget{
-  const LogChat({
-    super.key
-  });
-
-  @override
-  Widget build (BuildContext context){
-    return Scaffold(
-      appBar: AppBar(title: Text('This is the top app bar!'))
+    debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0),
+      ),
+      home: Auth()
     );
   }
 }

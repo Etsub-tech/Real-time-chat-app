@@ -27,8 +27,9 @@ class _RegisterState extends State<Register> {
 
             // ✅ Field 1: Email (not username)
             SizedBox(
-              width: 400,
+              width: 350,
               child: TextField(
+                style: TextStyle(color: Colors.white),
                 keyboardType: TextInputType.emailAddress, // ✅ correct keyboard
                 decoration: InputDecoration(
                   labelText: 'Enter your email', // ✅ fixed label
@@ -43,8 +44,9 @@ class _RegisterState extends State<Register> {
 
             // ✅ Field 2: Password
             SizedBox(
-              width: 400,
+              width: 350,
               child: TextField(
+                style: TextStyle(color: Colors.white),
                 obscureText: true, // ✅ hides text
                 decoration: InputDecoration(
                   labelText: 'Create Password',

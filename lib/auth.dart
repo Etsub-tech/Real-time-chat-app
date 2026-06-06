@@ -27,8 +27,9 @@ class _AuthState extends State<Auth>{
           mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-            width: 400,
+            width: 350,
           child: TextField(
+            style: TextStyle(color:Colors.white),
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
               labelText: 'Enter your email',
@@ -39,8 +40,9 @@ class _AuthState extends State<Auth>{
           ),),
 
           SizedBox(
-            width: 400,
+            width: 350,
             child: TextField(
+              style: TextStyle(color: Colors.white),
               obscureText: true,
             decoration: InputDecoration(
               labelText: 'Password'

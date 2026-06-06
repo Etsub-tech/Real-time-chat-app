@@ -20,7 +20,7 @@ class ChatApp extends StatelessWidget {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0),
+        scaffoldBackgroundColor: const Color.fromARGB(221, 87, 77, 77),
       ),
       home: Auth()
     );
